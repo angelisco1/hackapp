@@ -1,0 +1,34 @@
+<template name='add_new_hackathon'>
+  <div class='form-container'>
+    <form id="new-hackathon-form">
+      <h3>Hackathon Data</h3>
+      <input type="text" name="name" placeholder="Name"/>
+      <br>
+      <textarea name="description" placeholder="Description"></textarea>
+      <br>
+      <input type="text" name="place" placeholder="Place"/>
+      <br>
+      <input type="date" name="initDate" placeholder="Initial date"/>
+      <br>
+      <input type="date" name="finishDate" placeholder="Finish date"/>
+      <br>
+      <input type="text" name="cost" placeholder="Cost"/>
+      <br>
+      <label>Public?</label>
+      <input type="radio" name="isPublic" value="Yes" checked>Yes
+      <input type="radio" name="isPublic" value="No">No
+      <br>
+      <textarea name="bases" placeholder="Bases"></textarea>
+      <br>
+      <h3>RRSS</h3>
+      <input type="text" name="hashtag" placeholder="Hashtag"/>
+      <br>
+      <input type="url" name="urlYoutube" placeholder="Url Youtube"/>
+      <br>
+      <input type="url" name="urlFlickr" placeholder="Url Flickr"/>
+        <br>
+      <button type="submit" class="btn btn-primary save-new-hackathon">Save</button>
+      <button type="button" class="btn btn-danger go-home">Cancel</button>
+    </form>
+  </div>
+</template>

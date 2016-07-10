@@ -2,13 +2,20 @@
   <title>hackapp</title>
 </head>
 
-<body>
-  <h1>Welcome to Meteor!</h1>
+<template name="hackapp">
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      {{> _header}}
+    </header>
 
-  {{> hello}}
-</body>
+    <!-- MAIN -->
+    <main class="main">
+      {{> Template.dynamic template=main}}
+    </main>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+    <!-- FOOTER -->
+    <footer class="footer">
+    </footer>
+  </body>
 </template>

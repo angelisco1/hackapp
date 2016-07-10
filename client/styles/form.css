@@ -1,0 +1,36 @@
+/*############################## FORM ##############################*/
+
+.form-container {
+  width: 50%;
+  margin: 0 auto;
+  height: 100%
+}
+
+.form-container form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-container form label {
+  width: 15%;
+  margin-bottom: 3px;
+}
+
+.form-container form input, .form-container form textarea {
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.form-container form h3 {
+  color: #aaaaaa;
+  text-align: center;
+}
+
+.form-container form hr {
+  width: 100%;
+}
+
+.form-container form input[type='radio'] {
+  width: 10%;
+  text-align: center;
+}
