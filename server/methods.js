@@ -1,29 +1,11 @@
 Meteor.methods({
-  addHackathon: function(name, description, place, initDate, finishDate, hashtag, urlYoutube, urlFlickr, bases, organizations, cost, isPublic, numWinners, prizes, meetupEventId, teams){
-    Hackathons.insert({
-      name: name,
-      description: description,
-      place: place,
-      initDate: initDate,
-      finishDate: finishDate,
-      hashtag: hashtag,
-      urlYoutube: urlYoutube,
-      urlFlickr: urlFlickr,
-      bases: bases,
-      organizations: organizations,
-      cost: cost,
-      isPublic: isPublic,
-      numWinners: numWinners,
-      prizes: prizes,
-      meetupEventId: meetupEventId,
-      teams: teams,
-      created_at: new Date()
-    });
+  createHackathon: function(data) {
+    Hackathons.insert(data);
   },
-  deleteHackathon: function(hackathonId){
-    Hackathons.remove(hackathonId);
+  deleteHackathon: function(id) {
+    Hackathons.remove({_id: id});
   },
-  editHackathon: function(hackathonId){
-    Hackathons.update(hackathonId);
+  updateHackathon: function(id, data) {
+    Hackathons.update(id, data);
   }
 });

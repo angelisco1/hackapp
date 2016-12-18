@@ -1,0 +1,101 @@
+<template name='hackathonForm'>
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>{{showTitle}}</h2>
+    </div>
+  </div>
+
+  {{#with hackathon}}
+    <div class="row">
+      <form id="hackathonForm">
+        <h3>Hackathon Data</h3>
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="{{name}}" required />
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <input type="text" class="form-control" id="description" name="description" placeholder="Description" value="{{description}}" required />
+        </div>
+        <div class="form-group">
+          <label>Place</label>
+          <input type="text" class="form-control" id="place" name="place" placeholder="Place" value="{{place}}" required />
+        </div>
+        <div class="form-group col-md-6">
+          <label>Initial date</label>
+          <input type="date" class="form-control" id="initDate" name="initDate" placeholder="Initial date" value="{{initDate}}" required />
+        </div>
+        <div class="form-group col-md-6">
+          <label>Finish date</label>
+          <input type="date" class="form-control" id="finishDate" name="finishDate" placeholder="Finish date" value="{{finishDate}}" required />
+        </div>
+        <div class="form-group col-md-6">
+          <label>Cost</label>
+          <input type="text" class="form-control" id="cost" name="cost" placeholder="Cost" value="{{cost}}" required />
+        </div>
+        <div class="form-group col-md-6">
+          <label>Public?</label>
+          <div class="toggle-buttons">
+            <label class="btn btn-default">
+              <input type="checkbox" id="isPublic" name="isPublic" checked="{{isPublic}}" />
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Bases</label>
+          <textarea class="form-control" rows="5" id="bases" name="bases" placeholder="Bases" value="{{bases}}"></textarea>
+        </div>
+        <h3>RRSS Data</h3>
+        <div class="form-group">
+          <label>Hashtag</label>
+          <input type="text" class="form-control" id="hashtag" name="hashtag" placeholder="Hashtag" value="{{hashtag}}" />
+        </div>
+        <div class="form-group">
+          <label>Url Youtube</label>
+          <input type="text" class="form-control" id="urlYoutube" name="urlYoutube" placeholder="Url Youtube" value="{{urlYoutube}}" />
+        </div>
+        <div class="form-group">
+          <label>Url Flickr</label>
+          <input type="text" class="form-control" id="urlFlickr" name="urlFlickr" placeholder="Url Flickr" value="{{urlFlickr}}" />
+        </div>
+        <button type="submit" class="btn btn-success save-hackathon">Save</button>
+        <button type="button" class="btn btn-default go-home">Cancel</button>
+      </form>
+    </div>
+  {{/with}}
+
+
+  <!--
+  <div class='form-container'>
+    <form id="hackathon-form">
+      <h3>Hackathon Data</h3>
+      <input type="text" name="name" placeholder="Name"/>
+      <br>
+      <textarea name="description" placeholder="Description"></textarea>
+      <br>
+      <input type="text" name="place" placeholder="Place"/>
+      <br>
+      <input type="date" name="initDate" placeholder="Initial date"/>
+      <br>
+      <input type="date" name="finishDate" placeholder="Finish date"/>
+      <br>
+      <input type="text" name="cost" placeholder="Cost"/>
+      <br>
+      <label>Public?</label>
+      <input type="radio" name="isPublic" value="Yes" checked>Yes
+      <input type="radio" name="isPublic" value="No">No
+      <br>
+      <textarea name="bases" placeholder="Bases"></textarea>
+      <br>
+      <h3>RRSS</h3>
+      <input type="text" name="hashtag" placeholder="Hashtag"/>
+      <br>
+      <input type="url" name="urlYoutube" placeholder="Url Youtube"/>
+      <br>
+      <input type="url" name="urlFlickr" placeholder="Url Flickr"/>
+        <br>
+      <button type="submit" class="btn btn-primary save-hackathon">Save</button>
+      <button type="button" class="btn btn-danger go-home">Cancel</button>
+    </form>
+  </div> -->
+</template>

@@ -1,0 +1,16 @@
+<template name="showHackathon">
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      {{getHackathon.name}}
+    </div>
+    <div class="panel-body">
+      <div>
+        <em>{{getHackathon.initDate}} - {{getHackathon.finishDate}}</em>
+      </div>
+      <div>
+        {{getHackathon.description}}
+      </div>
+      <button class="btn btn-warning edit-hackathon-button" type="button">Editar</button>
+    </div>
+  </div>
+</template>

@@ -20,3 +20,4 @@ insecure                # Allow all DB writes from clients (for prototyping)
 kadira:flow-router
 meteorhacks:flow-layout
 twbs:bootstrap
+juliancwirko:s-alert

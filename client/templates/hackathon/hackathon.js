@@ -3,6 +3,6 @@ Template.hackathon.helpers({
     var hackathon = this;
     var params = {id: hackathon._id};
     var queryParams = {};
-    return FlowRouter.path('show_hackathon', params, queryParams);
+    return FlowRouter.path('showHackathon', params, queryParams);
   }
 });

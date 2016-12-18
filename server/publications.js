@@ -1,3 +1,3 @@
 Meteor.publish('hackathons', function(){
-  return Hackathons.find({});
+  return Hackathons.find();
 });
